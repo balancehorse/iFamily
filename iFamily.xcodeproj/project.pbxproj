@@ -15,6 +15,8 @@
 		57FF5C1E1DCB7183006B2FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FF5C1C1DCB7183006B2FFE /* LaunchScreen.storyboard */; };
 		57FF5C291DCB7183006B2FFE /* iFamilyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF5C281DCB7183006B2FFE /* iFamilyTests.m */; };
 		57FF5C341DCB7183006B2FFE /* iFamilyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF5C331DCB7183006B2FFE /* iFamilyUITests.m */; };
+		57FF5C431DCB75F8006B2FFE /* EventEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF5C421DCB75F8006B2FFE /* EventEditViewController.m */; };
+		A61A38E91DCC7C610093182D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A61A38E81DCC7C610093182D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		57FF5C2F1DCB7183006B2FFE /* iFamilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFamilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FF5C331DCB7183006B2FFE /* iFamilyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFamilyUITests.m; sourceTree = "<group>"; };
 		57FF5C351DCB7183006B2FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FF5C411DCB75F8006B2FFE /* EventEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventEditViewController.h; sourceTree = "<group>"; };
+		57FF5C421DCB75F8006B2FFE /* EventEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventEditViewController.m; sourceTree = "<group>"; };
+		A61A38E81DCC7C610093182D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		57FF5C021DCB7183006B2FFE = {
 			isa = PBXGroup;
 			children = (
+				A61A38E81DCC7C610093182D /* Default-568h@2x.png */,
 				57FF5C0D1DCB7183006B2FFE /* iFamily */,
 				57FF5C271DCB7183006B2FFE /* iFamilyTests */,
 				57FF5C321DCB7183006B2FFE /* iFamilyUITests */,
@@ -110,6 +116,8 @@
 				57FF5C1C1DCB7183006B2FFE /* LaunchScreen.storyboard */,
 				57FF5C1F1DCB7183006B2FFE /* Info.plist */,
 				57FF5C0E1DCB7183006B2FFE /* Supporting Files */,
+				57FF5C411DCB75F8006B2FFE /* EventEditViewController.h */,
+				57FF5C421DCB75F8006B2FFE /* EventEditViewController.m */,
 			);
 			path = iFamily;
 			sourceTree = "<group>";
@@ -247,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57FF5C1E1DCB7183006B2FFE /* LaunchScreen.storyboard in Resources */,
+				A61A38E91DCC7C610093182D /* Default-568h@2x.png in Resources */,
 				57FF5C1B1DCB7183006B2FFE /* Assets.xcassets in Resources */,
 				57FF5C191DCB7183006B2FFE /* Main.storyboard in Resources */,
 			);
@@ -276,6 +285,7 @@
 				57FF5C161DCB7183006B2FFE /* ViewController.m in Sources */,
 				57FF5C131DCB7183006B2FFE /* AppDelegate.m in Sources */,
 				57FF5C101DCB7183006B2FFE /* main.m in Sources */,
+				57FF5C431DCB75F8006B2FFE /* EventEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +517,7 @@
 				57FF5C3A1DCB7183006B2FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57FF5C3B1DCB7183006B2FFE /* Build configuration list for PBXNativeTarget "iFamilyTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +526,7 @@
 				57FF5C3D1DCB7183006B2FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57FF5C3E1DCB7183006B2FFE /* Build configuration list for PBXNativeTarget "iFamilyUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +535,7 @@
 				57FF5C401DCB7183006B2FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
