@@ -37,10 +37,10 @@
                 
                 
                 if (error) {
-                    
+                    NSLog(@"出错了");
                 }else if (!granted){
                     //被用户拒绝
-                    
+                    NSLog(@"被拒绝");
                 }else
                 {
                     
@@ -48,17 +48,18 @@
                     
                     EKEvent *event = [EKEvent eventWithEventStore:eventStore];
                     
-                    event.title = @"时间标题";
+                    event.title = @"新增一个测试事件";
+                    NSDateFormatter *tempFOrmatter = [[NSDateFormatter alloc] init];
+                    event.startDate = [tempFOrmatter dateFromString:@"2016-11-04  17:00"];
+                    event.endDate = [tempFOrmatter dateFromString:@"2016-11-04  17:00"];
+
                     
                     event.location = @"刻录机";
-                    
-                    NSDateFormatter *tempFOrmatter = [[NSDateFormatter alloc] init];
                     [tempFOrmatter setDateFormat:@"yyyy:MM:dd hh:mm"];
                     
-                    event.startDate = [tempFOrmatter dateFromString:@"2015-11-05  17:00"];
                     
-                    event.endDate = [tempFOrmatter dateFromString:@"2015-11-05  17:00"];
                     
+                                       
                     
                     
                     event.allDay = YES;
