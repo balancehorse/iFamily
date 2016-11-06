@@ -50,12 +50,12 @@
                     
                     event.title = @"新增一个测试事件";
                     NSDateFormatter *tempFOrmatter = [[NSDateFormatter alloc] init];
-                    event.startDate = [tempFOrmatter dateFromString:@"2016-11-04  17:00"];
-                    event.endDate = [tempFOrmatter dateFromString:@"2016-11-04  17:00"];
+                    event.startDate = [tempFOrmatter dateFromString:@"2016-11-07  17:00"];
+                    event.endDate = [tempFOrmatter dateFromString:@"2016-11-07  18:00"];
 
                     
                     event.location = @"刻录机";
-                    [tempFOrmatter setDateFormat:@"yyyy:MM:dd hh:mm"];
+                    [tempFOrmatter setDateFormat:@"2016:11:07 17:00"];
                     
                     
                     
@@ -64,16 +64,17 @@
                     
                     event.allDay = YES;
                     
-                    //添加提醒
-                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f * -60.0f*1 ]];
-                    
-                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f-15.0f]];
-                    
-                    [event setCalendar:[eventStore defaultCalendarForNewEvents]];
-                    
-                    NSError *err;
-                    
-                    [eventStore saveEvent:event span:EKSpanThisEvent error:&err];
+//                    //添加提醒
+////                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f * -60.0f*1 ]];
+////
+////                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f-15.0f]];
+//                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:3600]];
+//                    [event addAlarm:[EKAlarm alarmWithRelativeOffset:3600]];
+//                    [event setCalendar:[eventStore defaultCalendarForNewEvents]];
+//                    
+//                    NSError *err;
+//                    
+//                    [eventStore saveEvent:event span:EKSpanThisEvent error:&err];
                     
                     
                     NSLog(@"保存成功");
